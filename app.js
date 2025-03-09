@@ -91,6 +91,52 @@ let min = numbers.reduce((acc,ele)=>{
 });
 console.log(min);
 
+//======================================Exercise======================================//
+
+//Qs1.Square and sum the array elements using the arrow function and then find the average of the array
+//let numbers = [1,2,3,4];
+let sqr_numbers = numbers.map((ele)=>{
+    return ele*ele ;
+});
+console.log(sqr_numbers);//square of array elements
+
+let sum_sqr_numbers = sqr_numbers.reduce((acc,ele)=>{
+    return acc + ele;
+});
+console.log(sum_sqr_numbers);//sum of squares of all array elements
+console.log(sum_sqr_numbers/sqr_numbers.length);// average of squares of array elements
+
+let sum_numbers = numbers.reduce((acc,ele)=>{
+    return (acc+ele) ;
+});
+
+console.log(sum_numbers);//sum of array elements
+let avg = sum_numbers / numbers.length ;
+console.log(avg);
+
+//Qs2.Create a new array using the map function whose each element is equal to the original element plus 5.
+//let numbers = [1,2,3,4];
+let plus_5 = numbers.map( ele => ele + 5);
+console.log(plus_5);
+
+//Qs3.Create a new array whose elements are in uppercase of words present in the original array.
+let array_name = ["priti","rakesh","chimanpure"];
+
+let capital_name = array_name.map((ele) => {
+    return ele.toUpperCase();
+});
+console.log(capital_name);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
